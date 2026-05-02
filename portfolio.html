@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Portfolio - Bartolay Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body class="portfolio-page">
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Bartolay Portfolio.</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="index.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="about.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="portfolio.html">Portfolio</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="#">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="portfolio-header">
+            <h2 data-aos="fade-down" data-aos-duration="800">My Portfolio </h2>
+            <h1 data-aos="fade-up" data-aos-duration="800" data-aos-delay="200"></h1>
+        </div>
+        <div class="portfolio-grid">
+            <img src="img/main1.png" alt="Portfolio 1" data-aos="fade-up" data-aos-duration="800">
+            <img src="img/main4.png" alt="Portfolio 2" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+            <img src="img/main5.png" alt="Portfolio 3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <img src="img/main6.png" alt="Portfolio 4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <img src="img/main7.png" alt="Portfolio 5" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <img src="img/main.png" alt="Portfolio 6" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+        </div>
+        <div class="portfolio-banner" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+            <img src="img/main-banner.png" alt="Portfolio Banner">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
