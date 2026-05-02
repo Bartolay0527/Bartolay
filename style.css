@@ -16,7 +16,7 @@ body{
     height: auto;
     overflow-y: auto;
     overflow-x: hidden;
-    background: linear-gradient(to right, rgb(126, 161, 238), rgb(57, 119, 243));
+    background: linear-gradient(to right, rgb(114, 120, 133), rgb(160, 155, 155));
 }
 
 nav{
